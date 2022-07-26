@@ -34,7 +34,6 @@ class FacebookApp extends StatelessWidget {
           onPressed: () {
             print("Menu button pressed");
           },
-          
         ),
         actions: [
           IconButton(
@@ -52,12 +51,116 @@ class FacebookApp extends StatelessWidget {
         ],
         backgroundColor: Colors.white,
         
-
       ),
       floatingActionButton:FloatingActionButton(
         onPressed: () {},
       child: Icon(Icons.add),
       ) ,
+      body:SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child:  Column(
+        children: [
+        Container(
+        child:Text(
+          "Text 11111  " ,
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white,
+            ),
+          
+        ) ,
+        margin : EdgeInsets.all(5),
+        height: 200,
+        width: 500,
+        alignment: Alignment.center,
+        decoration:BoxDecoration( 
+          borderRadius: BorderRadius.circular(40),
+          color: Colors.blueGrey,
+        ) ,
+      ),
+        SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child:  Row(
+        children: [
+        Container(
+        child:Text(
+          "Text 1  " ,
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white,
+            ),
+          
+        ) ,
+        margin : EdgeInsets.all(20),
+        height: 200,
+        width: 200,
+        alignment: Alignment.center,
+        decoration:BoxDecoration( 
+          borderRadius: BorderRadius.circular(40),
+          color: Colors.blueGrey,
+        ) ,
+      ),
+        Container(
+        child:Text(
+          "Text 2" ,
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white,
+            ),
+          
+        ) ,
+        margin : EdgeInsets.all(20),
+        height: 200,
+        width: 200,
+        alignment: Alignment.center,
+        decoration:BoxDecoration( 
+          borderRadius: BorderRadius.circular(40),
+          color: Colors.blueGrey,
+        ) ,
+      ),
+        Container(
+        child:Text(
+          "Text 3" ,
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white,
+            ),
+          
+        ) ,
+        margin : EdgeInsets.all(20),
+        height: 200,
+        width: 200,
+        alignment: Alignment.center,
+        decoration:BoxDecoration( 
+          borderRadius: BorderRadius.circular(40),
+          color: Colors.blueGrey,
+        ) ,
+      ),
+        ],
+      ),
+      ),
+        Container(
+        child:Text(
+          "Text 22222  " ,
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white,
+            ),
+          
+        ) ,
+        margin : EdgeInsets.all(20),
+        height: 200,
+        width: 500,
+        alignment: Alignment.center,
+        decoration:BoxDecoration( 
+          borderRadius: BorderRadius.circular(40),
+          color: Colors.blueGrey,
+        ) ,
+      ),
+        
+        ],
+      ),
+      ),
     );
   }
 }
